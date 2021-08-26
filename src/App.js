@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./style/master.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Lodash from "./components/pages/Lodash";
+import Home from "./components/pages/Home";
+import AxiosPage from "./components/pages/AxiosPage";
+import Uuid from "./components/pages/Uuid";
+import NotFound from "./components/pages/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/npm/lodash" component={Lodash} />
+        <Route exact path="/npm/axios" component={AxiosPage} />
+        <Route exact path="/npm/uuid" component={Uuid} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 
