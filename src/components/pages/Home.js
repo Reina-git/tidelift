@@ -7,7 +7,7 @@ function Home() {
         <div className="col-12">
           <h1 className="mt-5 mb-4">My Favorite NPM Packages</h1>
           <p>
-            <Link to="/npm/lodash">Lodash</Link>
+            <Link to={`/npm/lodash`}>Lodash</Link>
           </p>
           <p>
             <Link to="/npm/axios">Axios</Link>
