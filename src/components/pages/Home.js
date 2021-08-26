@@ -5,7 +5,7 @@ function Home() {
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <h1 className="mt-5">My Favorite NPM Packages</h1>
+          <h1 className="mt-5 mb-4">My Favorite NPM Packages</h1>
           <p>
             <Link to="/npm/lodash">Lodash</Link>
           </p>

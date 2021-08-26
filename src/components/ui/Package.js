@@ -14,12 +14,12 @@ export default function Package(props) {
 
   return (
     <div className="">
-      <h1 className="mt-5">
+      <h1 className="mt-5 mb-4">
         {platform} / {name}
       </h1>
       <p>{description}</p>
 
-      <p>{getKeyWordString(keywords)}</p>
+      <p>Keywords: {getKeyWordString(keywords)}</p>
       <a href={homepage} target="blank" rel="noopener noreferrer">
         {homepage}
       </a>
